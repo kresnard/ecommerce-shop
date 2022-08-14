@@ -1,38 +1,524 @@
-.App {
-  text-align: center;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Style */
+body {
+	font: 14px/28px Poppins, arial;
+	background-color: #ffffff;
+    font-style: Poppins;
+	/* background-image: ; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+	width: 952px;
+	margin: auto;
+	background-color: #ffffff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+/* Header */
+.header {
+    margin: 10px 0;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.logo img {
+    height: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav {
+    flex: 1;
+    text-align: right;
 }
+
+.header ul li .home {
+    color: rgba(251, 74, 35, 0.745);
+}
+
+.header a:hover {
+	color: rgba(251, 74, 35, 0.745);
+}
+
+.header ul li {
+	display: inline-block;
+	margin-right: 10px;    
+}
+
+.header a {
+	text-decoration: none;
+	color: #0C0D36;
+	padding: 3px;
+}
+
+
+
+/* Awal Home Page */
+
+/* Hero image */
+
+.hero-img {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.banner {
+    width: 100%;
+}
+
+
+/* Categories */
+
+.categories {
+    /* background-color: rgb(170, 170, 170); */
+    width: 95%;
+    margin: auto;
+}
+
+.categories h2 {
+    font-size: 24px;
+    font-weight: 500;
+    padding: 20px;
+    color: 0C0D36;
+    padding: 20px;
+}
+
+/* Categories - box-card */
+
+.categories .group-box-card {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.categories .box-card {
+    background-color:F4F4F4;
+    width: 14.07%;
+    height: 155px;
+    margin: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.card-categories {
+    text-align: center;
+}
+
+.card-categories img {
+    width: 80%;
+    vertical-align:middle;
+    text-align:center;
+}
+
+.card-categories img,
+.card-categories h6{
+    margin: auto;
+    padding: 10px 10px 0 10px;
+    text-align: center;
+    color: rgb(148, 148, 148);
+}
+
+
+
+/* Product */
+.products {
+    /* background-color: rgb(170, 170, 170); */
+    width: 95%;
+    margin: auto;
+}
+
+.products h2 {
+    font-size: 24px;
+    font-weight: 500;
+    padding: 20px;
+    color: 0C0D36;
+    padding: 20px;
+}
+
+/* products - box-card */
+
+.products {
+    margin-bottom: 40px;
+}
+
+.products .group-box-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.products .box-card {
+    /* background-color:rgb(100, 30, 30); */
+    width: 216px;
+    height: 155px;
+    margin: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.card-products {
+    text-align: center;
+}
+
+.products a {
+	text-decoration: none;
+}
+
+
+.card-products img {
+    width: 80%;
+    align-items: center;
+}
+
+.card-products img{
+    margin: auto;
+    padding: 10px 10px 0 10px;
+    color: rgb(148, 148, 148);
+}
+
+.products .box-card h6{
+    font-weight: 400;
+    font-size: 18px;
+    padding: 10px 20px 0 20px;
+    color: #0C0D36;
+}
+
+
+.products .box-card p {
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0 20px 0 20px;
+    color: rgba(251, 74, 35, 0.745);
+}
+
+/* Akhir Home Page */
+
+
+/* ------------------------------------------------------- */
+
+
+/* Awal Detail Product */
+.col-detail-product {
+    display: inline-flex;
+}
+
+.detail-product {
+    margin-top: 40px;
+}
+
+/* Awal image detail produk */
+
+.col-detail-product .col-1 {
+    width: 100%;
+    padding: 10px;
+}
+
+
+.col-detail-product .img-product-detail img {
+    width: 100%;
+}
+
+/* akhir image detail produk */
+
+.col-detail-product .col-2 {
+    width: 100%;
+    padding: 10px;
+}
+
+.col-detail-product .col-2 h1 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #0C0D36;
+}
+
+.col-detail-product .col-2 .quote {
+    margin-top: -5px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 180%;
+    color: #979797;
+}
+
+.col-detail-product .col-2 h4 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;
+    color: rgba(251, 74, 35, 0.745);
+}
+
+.col-detail-product .col-2 p {
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 180%;
+    color: #525252;
+}
+
+.col-detail-product .col-2 a {
+    margin-top: 16px;
+    text-decoration: none;
+    position: absolute;
+    width: 210px;
+    height: 35px;
+    background-color: #29A867;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 6px;
+    border-radius: 16px;
+}
+
+.col-detail-product .col-2 a:hover {
+    border: 1px solid #29A867;
+    background-color: #ffffff;
+    color: #29A867;
+}
+
+
+/* Akhir Detail Product */
+
+/* -------------------------------------------------------------------- */
+
+/* Awal Cart Product */
+
+/* Awal Header Cart Product */
+.cart-product {
+    margin-top: 40px;
+}
+
+.cart-product .col-1,
+.cart-product .col-2,
+.cart-product .col-3,
+.cart-product .col-4 {
+    width: 215px;
+    padding: 10px;
+    color: #0C0D36;
+}
+
+.col-head-cart,
+.col-content-cart {
+    display: inline-flex;
+}
+
+.col-head-cart .col-1 h4,
+.col-head-cart .col-2 H4,
+.col-head-cart .col-3 H4,
+.col-head-cart .col-4 H4{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.col-content-cart .col-1 img {
+    width: 160px;
+}
+
+.col-content-cart .col-2 p,
+.col-content-cart .col-3 p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27x;
+    margin-bottom: 20px;
+}
+
+/* Akhir Header Cart Product */
+
+
+
+/* Awal Payment Information */
+
+.payment-informations {
+    margin-top: 20px;
+}
+
+.payment-informations h1,
+.cart-product h1 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24x;
+    color: #0C0D36;
+}
+
+.data-payments {
+    margin-top: 10px;
+    display: flex;
+}
+
+
+
+.card-dpm {
+    width: 20%;
+    padding: 5px;
+    box-shadow: 1px 1px #cacacaf2;
+    margin: 0 20px;
+    border: 1px solid #ffffffe7;
+    border-radius: 10px;
+}
+
+.card-dpm p {
+    font-size: 18px;
+    font-weight: 4px;
+    line-height: 27x;
+    color: #0C0D36;
+}
+
+.total p {
+    color: #29A867;
+}
+
+.card-dpm h2 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21x;
+    color: #979797;
+}
+
+.data-payments a {
+    margin: 16px auto;
+    text-decoration: none;
+    width: 35.75%;
+    height: 35px;
+    background-color: #29A867;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 6px;
+    border-radius: 6px;
+    display: block;
+}
+
+.col-4 input {
+        padding-left: 10px;
+        margin: 10px auto;
+        width: 25%;
+        min-height: 36px;
+        border: 1px solid #29A867;
+        border-radius: 6px;
+    }
+
+
+
+
+
+/* Akhir Cart Product */
+
+
+/* Awal Login */
+
+.login {
+        margin: 100px auto;
+        width: 50%;
+}
+
+.login h1{
+    text-align: center;
+    font-size: 28px;
+    line-height: 42px;
+    font-weight: 400;    
+    color: #0C0D36;
+}
+
+form {
+    align-items: center;
+    margin: auto;
+    width: 100%;
+}
+
+input {
+        padding-left: 10px;
+        margin: 10px auto;
+        width: 100%;
+        min-height: 36px;
+        border: 1px solid #29A867;
+        border-radius: 6px;
+    }
+
+.login a.login{
+    margin: 16px auto;
+    text-decoration: none;
+    position: absolute;
+    width: 35.75%;
+    height: 35px;
+    background-color: #29A867;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 6px;
+    border-radius: 6px;
+    }
+
+.login a.login:hover {
+    border: 1px solid #29A867;
+    background-color: #ffffff;
+    color: #29A867;
+}
+
+.register{
+    margin: 16px auto;
+    text-decoration: none;
+    position: absolute;
+    width: 35.75%;
+    height: 35px;
+    background-color: #ffffff;
+    color: #29A867;
+    text-align: center;
+    padding-top: 6px;
+    border-radius: 6px;
+    }
+
+
+/* Akhir Login */
+
+
+/* Awal Register */
+
+/* Akhir Register */
+
+
