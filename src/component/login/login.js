@@ -25,8 +25,7 @@ const Login = () => {
                     <p>Password</p>
                     <input type="password" name="pass" placeholder="Input your password"/><br/>
                 </form>
-                <a className="login" href="login.html">Sign In</a><br/><br/>
-                <a className="register" href="register.html">Sign Up</a>
+                <button>Sign In</button>
             </div>
 
         </div>
