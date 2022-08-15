@@ -1,6 +1,9 @@
+import React from "react"
+import { images } from "assets";
+
 const Product = () => {
     return (
-        <div classNameName="container">
+        <div className="container">
 
             <div id="products" className="products">
                 <h2>Products</h2>
@@ -10,7 +13,7 @@ const Product = () => {
                     <div className="box-card">
                         <a href="detail-product.html">
                             <div className="card-products">
-                                <img src="/asset/home/home-prdct/green-sofa.png" alt="" />
+                                <img src={images["prd-green-sofa.png"]} alt="" />
                             </div>
                             <h6>Green Sofa</h6>
                             <p>$400</p>
@@ -20,7 +23,7 @@ const Product = () => {
                     <div className="box-card">
                         <a href="detail-product.html">
                             <div className="card-products">
-                                <img src="/asset/home/home-prdct/orange-bogotta.png" alt="" />
+                                <img src={images["prd-orange-bogotta.png"]}  alt="" />
                             </div>
                             <h6>Orange Bogotta</h6>
                             <p>$400</p>
@@ -30,7 +33,7 @@ const Product = () => {
                     <div className="box-card">
                         <a href="detail-product.html">
                             <div className="card-products">
-                                <img src="/asset/home/home-prdct/apple-watch.png" alt="" />
+                                <img src={images["prd-apple-watch.png"]}  alt="" />
                             </div>
                             <h6>Apple Watch</h6>
                             <p>$400</p>
@@ -40,7 +43,7 @@ const Product = () => {
                     <div className="box-card">
                         <a href="detail-product.html">
                             <div className="card-products">
-                                <img src="/asset/home/home-prdct/maketti-powder.png" alt="" />
+                                <img src={images["prd-maketti-powder.png"]}  alt="" />
                             </div>
                             <h6>Maketti Powder</h6>
                             <p>$400</p>
@@ -50,7 +53,7 @@ const Product = () => {
                     <div className="box-card">
                         <a href="detail-product.html">
                             <div className="card-products">
-                                <img src="/asset/home/home-prdct/glass-plate.png" alt="" />
+                                <img src={images["prd-glass-plate.png"]}  alt="" />
                             </div>
                             <h6>Glass Plate</h6>
                             <p>$400</p>
@@ -60,7 +63,7 @@ const Product = () => {
                     <div className="box-card">
                         <a href="detail-product.html">
                             <div className="card-products">
-                                <img src="/asset/home/home-prdct/drone.png" alt="" />
+                                <img src={images["prd-drone.png"]}  alt="" />
                             </div>
                             <h6>Mavick Drone</h6>
                             <p>$400</p>
@@ -70,7 +73,7 @@ const Product = () => {
                     <div className="box-card">
                         <a href="detail-product.html">
                             <div className="card-products">
-                                <img src="/asset/home/home-prdct/nike.png" alt="" />
+                                <img src={images["prd-nike.png"]}  alt="" />
                             </div>
                             <h6>Nike Black</h6>
                             <p>$400</p>
@@ -80,7 +83,7 @@ const Product = () => {
                     <div className="box-card">
                         <a href="detail-product.html">
                             <div className="card-products">
-                                <img src="/asset/home/home-prdct/monkey.png" alt="" />
+                                <img src={images["prd-monkey.png"]}  alt="" />
                             </div>
                             <h6>Monkey Toys</h6>
                             <p>$400</p>

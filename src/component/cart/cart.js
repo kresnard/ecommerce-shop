@@ -1,3 +1,6 @@
+import React from "react"
+import { images } from "assets";
+
 const Cart = () => {
     return (
         <div className="container">
@@ -5,7 +8,7 @@ const Cart = () => {
 
             <div className="header">
                 <div className="logo">
-                    <img src="/asset/logo.png" alt="logo-Eshop"/>
+                    <img src={images["logo.png"]} alt="logo-Eshop"/>
                 </div>
 
                 <nav>
@@ -47,7 +50,7 @@ const Cart = () => {
 
                 <div className="col-content-cart">
                     <div className="col-1">
-                        <img src="asset/cart/green-sofa.png" alt="" />
+                        <img src={images["cart-green-sofa.png"]}  alt="" />
                     </div>
 
                     <div className="col-2">
@@ -65,7 +68,7 @@ const Cart = () => {
 
                 <div className="col-content-cart">                    
                     <div className="col-1">
-                        <img src="asset/cart/sneaker.png" alt="" />
+                        <img src={images["cart-sneaker.png"]}  alt="" />
                     </div>
 
                     <div className="col-2">

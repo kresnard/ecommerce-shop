@@ -1,10 +1,13 @@
+import React from "react"
+import { images } from "assets";
+
 const Login = () => {
     return (
         <div className="container">
             
             <div className="header">
                 <div className="logo">
-                    <img src="/asset/logo.png" alt="logo-Eshop"/>
+                    <img src={images["logo.png"]} alt="logo-Eshop"/>
                 </div>
 
                 <nav>

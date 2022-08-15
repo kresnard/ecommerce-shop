@@ -1,3 +1,6 @@
+import React from "react"
+import { images } from "assets";
+
 const Category = () => {
     return (
         <div className="container">
@@ -8,42 +11,42 @@ const Category = () => {
 
                     <div className="box-card">
                         <div className="card-categories">
-                            <img className="img-cat" src="/asset/home/home-ctgr/gadget.svg" alt=""/>
+                            <img className="img-cat" src={images["ctgr-gadget.svg"]} alt=""/>
                             <h6>Gadget</h6>
                         </div>
                     </div>
 
                     <div className="box-card">
                         <div className="card-categories">
-                            <img src="/asset/home/home-ctgr/furniture.svg" alt=""/>
+                            <img src={images["ctgr-furniture.svg"]} alt=""/>
                             <h6>Furniture</h6>
                         </div>
                     </div>
 
                     <div className="box-card">
                         <div className="card-categories">
-                            <img src="/asset/home/home-ctgr/makeup.svg" alt=""/>
+                            <img src={images["ctgr-makeup.svg"]}alt=""/>
                             <h6>Make Up</h6>
                         </div>
                     </div>
 
                     <div className="box-card">
                         <div className="card-categories">
-                            <img src="/asset/home/home-ctgr/sneaker.svg" alt="" />
+                            <img src={images["ctgr-sneaker.svg"]} alt="" />
                             <h6>Sneaker</h6>
                         </div>
                     </div>
 
                     <div className="box-card">
                         <div className="card-categories">
-                            <img src="/asset/home/home-ctgr/tools.svg" alt="" />
+                            <img src={images["ctgr-tools.svg"]} alt="" />
                             <h6>Tools</h6>
                         </div>
                     </div>
 
                     <div className="box-card">
                         <div className="card-categories">
-                            <img src="/asset/home/home-ctgr/baby.svg" alt="" />
+                            <img src={images["ctgr-baby.svg"]} alt="" />
                             <h6>baby</h6>
                         </div>
                     </div>

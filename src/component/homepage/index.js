@@ -1,15 +1,17 @@
+import React from "react"
 import Category from "./categories"
 import Header from "./header"
 import Product from "./products"
 
-const HomePage = () => {
+const Index = () => {
+    console.log("INI HOMEPAGE")
     return (
-        <>
-        <Header />,
-        <Category />,
+        <React.Fragment>
+        <Header />
+        <Category />
         <Product />
-        </>
+        </React.Fragment>
     )
 };
 
-export default HomePage;
+export default Index;

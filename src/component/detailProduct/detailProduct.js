@@ -1,9 +1,12 @@
+import React from "react"
+import { images } from "assets";
+
 const DetailProduct = () => {
     return (
         <div className="container">
                 <div className="header">
                     <div className="logo">
-                        <img src="/asset/logo.png" alt="logo-Eshop" />
+                        <img src={images["logo.png"]} alt="logo-Eshop" />
                     </div>
 
                     <nav>
@@ -22,7 +25,7 @@ const DetailProduct = () => {
 
                         <div className="col-1">      
                             <div className="img-product-detail">
-                                <img src="/asset/detailProduct/green-sofa.png" alt="" />
+                                <img src={images["dp-green-sofa.png"]}  alt="" />
                             </div>
                         </div>
 
