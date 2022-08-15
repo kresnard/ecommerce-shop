@@ -16,7 +16,7 @@ const Register = () => {
             </nav>
         </div>
 
-        <div className="login">
+        <div className="signup">
             <h1>Sign Up</h1>
             <form action="" method="">
                 <p>Nama</p>
@@ -25,8 +25,8 @@ const Register = () => {
                 <input type="text" name="email" placeholder="Input your email"/><br/>
                 <p>Password</p>
                 <input type="password" name="pass" placeholder="Input your password"/><br/>
+                <button>Sign Up</button>
             </form>
-            <a className="login" href="login.html">Sign Up</a>
         </div>
 
     </div>

@@ -548,11 +548,11 @@ nav {
     width: 50%;
 }
 
-.login h1 {
+.login h1{
     text-align: center;
     font-size: 28px;
     line-height: 42px;
-    font-weight: 400;
+    font-weight: 400;    
     color: #0C0D36;
 }
 
@@ -563,13 +563,13 @@ form {
 }
 
 input {
-    padding-left: 10px;
-    margin: 10px auto;
-    width: 100%;
-    min-height: 36px;
-    border: 1px solid #29A867;
-    border-radius: 6px;
-}
+        padding-left: 10px;
+        margin: 10px auto;
+        width: 100%;
+        min-height: 36px;
+        border: 1px solid #29A867;
+        border-radius: 6px;
+    }
 
 .login button {
     margin-left: 5px;
@@ -589,7 +589,7 @@ input {
     color: #29A867;
 }
 
-.register {
+.register{
     margin: 16px auto;
     text-decoration: none;
     position: absolute;
@@ -600,15 +600,68 @@ input {
     text-align: center;
     padding-top: 6px;
     border-radius: 6px;
-}
-
-
-/* Akhir Login */
-
+    }
 
 /* Awal Register */
+.signup {
+    margin: 100px auto;
+    width: 50%;
+}
 
-/* Akhir Register */
+.signup h1{
+    text-align: center;
+    font-size: 28px;
+    line-height: 42px;
+    font-weight: 400;    
+    color: #0C0D36;
+}
+
+form {
+    align-items: center;
+    margin: auto;
+    width: 100%;
+}
+
+input {
+        padding-left: 10px;
+        margin: 10px auto;
+        width: 100%;
+        min-height: 36px;
+        border: 1px solid #29A867;
+        border-radius: 6px;
+    }
+
+.signup button {
+    margin-left: 5px;
+    margin-top: 10px;
+    width: 100%;
+    height: 35px;
+    background-color: #29A867;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 12px;
+    border: 0;
+    }
+
+.signup button:hover {
+    border: 1px solid #29A867;
+    background-color: #ffffff;
+    color: #29A867;
+}
+
+.register{
+    margin: 16px auto;
+    text-decoration: none;
+    position: absolute;
+    width: 35.75%;
+    height: 35px;
+    background-color: #ffffff;
+    color: #29A867;
+    text-align: center;
+    padding-top: 6px;
+    border-radius: 6px;
+    }
+
 
 
 
@@ -705,6 +758,21 @@ input {
     border: 0;
     }
 
+    .signup {
+        width: 75%;
+    }
+
+    .signup button {
+    margin-left: 5px;
+    margin-top: 10px;
+    width: 100%;
+    height: 35px;
+    background-color: #29A867;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 12px;
+    border: 0;
+    }
 
 }
 
