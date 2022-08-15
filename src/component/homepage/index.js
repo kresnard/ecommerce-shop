@@ -4,7 +4,6 @@ import Header from "./header"
 import Product from "./products"
 
 const Index = () => {
-    console.log("INI HOMEPAGE")
     return (
         <React.Fragment>
         <Header />

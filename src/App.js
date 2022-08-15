@@ -7,13 +7,12 @@ import Register from './component/register/register';
 
 
 function App() {
-  console.log("HALLOOOOO!")
   return (
     <>
-      <HomePage />,
-      <DetailProduct />,
-      <Cart />,
-      <Login />,
+      <HomePage />
+      <DetailProduct />
+      <Cart />
+      <Login />
       <Register />    
     </>
   );

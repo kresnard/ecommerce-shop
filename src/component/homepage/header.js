@@ -2,8 +2,6 @@ import React from "react"
 import { images } from "assets";
 
 const Header = () => {
-    console.log("halloooo")
-    console.log(images)
     return (
         <div className="container">
 

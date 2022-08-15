@@ -3,62 +3,149 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* Style */
 body {
-	font: 14px/28px Poppins, arial;
-	background-color: #ffffff;
+    font: 14px/28px Poppins, arial;
+    background-color: #ffffff;
     font-style: Poppins;
-	/* background-image: ; */
+    /* background-image: ; */
 }
 
 .container {
-	width: 69.69%;
-	margin: auto;
-	background-color: #ffffff;
+    width: 69.69%;
+    margin: auto;
+    background-color: #ffffff;
 }
 
 
@@ -85,18 +172,19 @@ nav {
 }
 
 .header a:hover {
-	color: rgba(251, 74, 35, 0.745);
+    color: rgba(251, 74, 35, 0.745);
 }
 
 .header ul li {
-	display: inline-block;
-	margin-right: 10px;    
+    display: inline-block;
+    margin-right: 10px;
 }
 
 .header a {
-	text-decoration: none;
-	color: #0C0D36;
-	padding: 3px;
+    font-size: 0.875rem;
+    text-decoration: none;
+    color: #0C0D36;
+    padding: 3px;
 }
 
 
@@ -125,7 +213,7 @@ nav {
 }
 
 .categories h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 500;
     padding: 20px;
     color: 0C0D36;
@@ -141,7 +229,7 @@ nav {
 }
 
 .categories .box-card {
-    background-color:F4F4F4;
+    background-color: F4F4F4;
     width: 134px;
     height: 155px;
     margin: auto;
@@ -155,12 +243,12 @@ nav {
 
 .card-categories img {
     width: 80%;
-    vertical-align:middle;
-    text-align:center;
+    vertical-align: middle;
+    text-align: center;
 }
 
 .card-categories img,
-.card-categories h6{
+.card-categories h6 {
     margin: auto;
     padding: 10px 10px 0 10px;
     text-align: center;
@@ -177,7 +265,7 @@ nav {
 }
 
 .products h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 500;
     padding: 20px;
     color: 0C0D36;
@@ -210,7 +298,7 @@ nav {
 }
 
 .products a {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 
@@ -219,15 +307,15 @@ nav {
     align-items: center;
 }
 
-.card-products img{
+.card-products img {
     margin: auto;
     padding: 10px 10px 0 10px;
     color: rgb(148, 148, 148);
 }
 
-.products .box-card h6{
+.products .box-card h6 {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.125rem;
     padding: 10px 20px 0 20px;
     color: #0C0D36;
 }
@@ -235,7 +323,7 @@ nav {
 
 .products .box-card p {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1rem;
     padding: 0 20px 0 20px;
     color: rgba(251, 74, 35, 0.745);
 }
@@ -253,6 +341,7 @@ nav {
 
 .detail-product {
     margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 /* Awal image detail produk */
@@ -352,7 +441,7 @@ nav {
 .col-head-cart .col-1 h4,
 .col-head-cart .col-2 H4,
 .col-head-cart .col-3 H4,
-.col-head-cart .col-4 H4{
+.col-head-cart .col-4 H4 {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -437,13 +526,13 @@ nav {
 }
 
 .col-4 input {
-        padding-left: 10px;
-        margin: 10px auto;
-        width: 25%;
-        min-height: 36px;
-        border: 1px solid #29A867;
-        border-radius: 6px;
-    }
+    padding-left: 10px;
+    margin: 10px auto;
+    width: 25%;
+    min-height: 36px;
+    border: 1px solid #29A867;
+    border-radius: 6px;
+}
 
 
 
@@ -455,15 +544,15 @@ nav {
 /* Awal Login */
 
 .login {
-        margin: 100px auto;
-        width: 50%;
+    margin: 100px auto;
+    width: 50%;
 }
 
-.login h1{
+.login h1 {
     text-align: center;
     font-size: 28px;
     line-height: 42px;
-    font-weight: 400;    
+    font-weight: 400;
     color: #0C0D36;
 }
 
@@ -474,15 +563,15 @@ form {
 }
 
 input {
-        padding-left: 10px;
-        margin: 10px auto;
-        width: 100%;
-        min-height: 36px;
-        border: 1px solid #29A867;
-        border-radius: 6px;
-    }
+    padding-left: 10px;
+    margin: 10px auto;
+    width: 100%;
+    min-height: 36px;
+    border: 1px solid #29A867;
+    border-radius: 6px;
+}
 
-.login a.login{
+.login a.login {
     margin: 16px auto;
     text-decoration: none;
     position: absolute;
@@ -493,7 +582,7 @@ input {
     text-align: center;
     padding-top: 6px;
     border-radius: 6px;
-    }
+}
 
 .login a.login:hover {
     border: 1px solid #29A867;
@@ -501,7 +590,7 @@ input {
     color: #29A867;
 }
 
-.register{
+.register {
     margin: 16px auto;
     text-decoration: none;
     position: absolute;
@@ -512,7 +601,7 @@ input {
     text-align: center;
     padding-top: 6px;
     border-radius: 6px;
-    }
+}
 
 
 /* Akhir Login */
@@ -523,3 +612,127 @@ input {
 /* Akhir Register */
 
 
+
+/* Media Queries */
+
+@media screen and (max-width : 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .header a {
+        font-size: 0.75rem;
+        line-height: 150%;
+    }
+
+    .categories h2,
+    .products h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .col-detail-product .col-2 h1 {
+    font-size: 1.25rem;
+    }
+
+    .col-detail-product .col-2 .quote {
+        font-size: 0.625rem;
+    }
+
+    .col-detail-product .col-2 h4 {
+        font-size: 1rem;
+    }
+
+    .col-detail-product .col-2 p{
+        font-size: 0.75rem;
+    }
+
+    .col-detail-product button:hover {
+    margin-top: 10px;
+    width: 210px;
+    height: 35px;
+    background-color: #29A867;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 12px;
+    border: 0;
+    }
+
+    .col-detail-product button:click {
+        margin-top: 10px;
+        width: 230px;
+        height: 55px;
+        background-color: #29A867;
+        color: #ffffff;
+        text-align: center;
+        border-radius: 12px;
+        border: 0;
+    }
+
+
+    .cart-product .col-1,
+    .cart-product .col-2,
+    .cart-product .col-3,
+    .cart-product .col-4 {
+    width: 175px;
+    padding: 10px;
+    color: #0C0D36;
+    }
+
+}
+
+@media screen and (max-width : 575px) {
+    .hero-img {
+        width: 90%;
+    }
+
+    .categories h2,
+    .products h2 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .products .box-card {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 20px;
+    }
+
+    .card-products img {
+        width: 100%;
+        align-items: center;
+        padding: 0;
+    }
+
+    .products .box-card h6 {
+        font-weight: 400;
+        font-size: 0.75rem;
+        text-align: center;
+        margin-top: -5px;
+        padding: 0;
+        color: #0C0D36;
+    }
+
+    .products .box-card p {
+        font-weight: 500;
+        font-size: 0.625rem;
+        text-align: center;
+        margin-top: -5px;
+        padding: 0;
+        color: rgba(251, 74, 35, 0.745);
+    }
+
+    .col-detail-product{
+        display: block;
+    }
+
+    .col-detail-product .img-product-detail {
+        width: 90%;
+    }
+
+    .col-detail-product .col-2{
+        box-sizing:border-box ;
+        width: 95%;
+    }
+
+}
