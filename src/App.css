@@ -56,7 +56,7 @@ body {
 }
 
 .container {
-	width: 952px;
+	width: 69.69%;
 	margin: auto;
 	background-color: #ffffff;
 }
@@ -136,12 +136,13 @@ nav {
 
 .categories .group-box-card {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
 .categories .box-card {
     background-color:F4F4F4;
-    width: 14.07%;
+    width: 134px;
     height: 155px;
     margin: auto;
     margin: 20px 0;
