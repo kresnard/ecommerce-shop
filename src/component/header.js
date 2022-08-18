@@ -1,5 +1,5 @@
 import React from "react"
-import { auth, logOut } from '../config/firebase'
+import { auth, logout } from '../config/firebase'
 import { useAuthState } from 'react-firebase-hooks/auth';
 
 import { Link as Scroll } from "react-scroll";
@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { images } from "assets";
 
 const Header = () => {
-    const user = useAuthState(auth);
+    const [user] = useAuthState(auth);
 
     return (
         <div className="container">
@@ -27,7 +27,7 @@ const Header = () => {
                             user ? <li><Link to="/Cart">Cart</Link></li> : <li><Link to="/sign-in">Sign In</Link></li> 
                         }
                         {
-                            user ? <li><Link to="" onClick={logOut}>Log Out</Link></li> : <li><Link to="/sign-in">Sign In</Link></li> 
+                            user ? ( <li><Link to="" ><span onClick={logout}>Log Out</span></Link></li> ) : "" 
                         }
                         {
                             user ? "": <li><Link to="/sign-up">Sign Up</Link></li>
