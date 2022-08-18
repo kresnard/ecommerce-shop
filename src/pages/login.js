@@ -1,8 +1,12 @@
-import React, {useState} from "react";
+import React, { useState, useEffect } from "react";
 import { auth, logInWithEmailAndPassword } from "config/firebase";
-
+import { useAuthState } from 'react-firebase-hooks/auth'
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+    const [user, loading, error] = useAuthState(auth);
+
+    const navigate = useNavigate();
 
     const [login, setLogin] = useState({
         email: "",
@@ -15,6 +19,14 @@ const Login = () => {
             await logInWithEmailAndPassword(login.email, login.password);
         }
     }
+
+    useEffect(() => {
+        if (loading) {
+            return;
+        }
+        if (user) navigate('/');
+        if (error) alert(error);
+    }, [loading, user,error,navigate]);
 
     return (
         <div className="container">
