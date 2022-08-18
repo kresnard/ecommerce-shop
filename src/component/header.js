@@ -1,12 +1,14 @@
 import React from "react"
 import { auth, logout } from '../config/firebase'
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { useLocation } from "react-router-dom";
 
 import { Link as Scroll } from "react-scroll";
 import { Link } from "react-router-dom";
 import { images } from "assets";
 
 const Header = () => {
+    const location = useLocation();
     const [user] = useAuthState(auth);
 
     return (
@@ -20,9 +22,16 @@ const Header = () => {
                 <nav>
                     <ul>
                         <li className="home"><Link to ="/">Home</Link></li>
+                        { location.pathname !== '/' ? 
+                        <li>
+                            <Link to="/" >Product</Link>
+                        </li>                        
+                        :
                         <li>
                             <Scroll to="products" spy={true} smooth={true} offset={250} duration={500}>Product</Scroll>
-                        </li>
+                        </li>  
+                        }
+                        
                         <li><Link to={user ? "/Cart" : "/sign-in"}>Cart</Link></li>                        
                         {
                             user ? '' : <li><Link to="/sign-in">Sign In</Link></li>
