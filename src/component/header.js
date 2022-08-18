@@ -23,14 +23,15 @@ const Header = () => {
                         <li>
                             <Scroll to="products" spy={true} smooth={true} offset={250} duration={500}>Product</Scroll>
                         </li>
+                        <li><Link to={user ? "/Cart" : "/sign-in"}>Cart</Link></li>                        
                         {
-                            user ? <li><Link to="/Cart">Cart</Link></li> : <li><Link to="/sign-in">Sign In</Link></li> 
+                            user ? '' : <li><Link to="/sign-in">Sign In</Link></li>
                         }
                         {
-                            user ? ( <li><Link to="" ><span onClick={logout}>Log Out</span></Link></li> ) : "" 
+                            user ? ( <li><Link to="" ><span onClick={logout}>Log Out</span></Link></li> ) : '' 
                         }
                         {
-                            user ? "": <li><Link to="/sign-up">Sign Up</Link></li>
+                            user ? '' : <li><Link to="/sign-up">Sign Up</Link></li>
                         }                      
                     </ul>
                 </nav>
