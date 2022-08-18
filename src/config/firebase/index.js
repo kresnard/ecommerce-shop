@@ -35,7 +35,7 @@ const logInWithEmailAndPassword = async (email, password) => {
     }
 };
 
-const signUpWithEmailAndPassword = async (name, email, password) => {
+const registerWithEmailAndPassword = async (name, email, password) => {
     try {
     const res = await createUserWithEmailAndPassword(auth, email, password);
     const user = res.user;
@@ -51,6 +51,8 @@ const signUpWithEmailAndPassword = async (name, email, password) => {
     }
 };
 
+const logOut = () => {
+    signOut(auth);
+};
 
-
-export {auth, logInWithEmailAndPassword, signUpWithEmailAndPassword};
+export {auth, db, logInWithEmailAndPassword, registerWithEmailAndPassword, logOut};
