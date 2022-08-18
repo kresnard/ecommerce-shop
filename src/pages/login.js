@@ -1,22 +1,10 @@
 import React from "react"
-import { images } from "assets";
+
 
 const Login = () => {
     return (
         <div className="container">
             
-            <div className="header">
-                <div className="logo">
-                    <img src={images["logo.png"]} alt="logo-Eshop"/>
-                </div>
-
-                <nav>
-                    <ul>
-                        <li><a className="" href="index.html">Home</a></li>
-                    </ul>
-                </nav>
-            </div>
-
             <div className="login">
                 <h1>Sign In</h1>
                 <form action="" method="">

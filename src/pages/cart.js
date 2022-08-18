@@ -1,26 +1,10 @@
 import React from "react"
+
 import { images } from "assets";
 
 const Cart = () => {
     return (
         <div className="container">
-
-
-            <div className="header">
-                <div className="logo">
-                    <img src={images["logo.png"]} alt="logo-Eshop"/>
-                </div>
-
-                <nav>
-                    <ul>
-                        <li><a className="home" href="login.html">Home</a></li>
-                        <li><a className="" href="#products">Products</a></li>
-                        <li><a className="" href="login.html">Sign In</a></li>
-                        <li><a className="" href="login.html">Sign Up</a></li>
-                    </ul>
-                </nav>
-            </div>
-
 
             <div className="cart-product">
                 <h1>Cart</h1>
@@ -105,7 +89,7 @@ const Cart = () => {
                         <h2>Total</h2>
                     </div>
 
-                    <a href="cart.html">Checkout</a>
+                    <a href=" ">Checkout</a>
 
 
                 </div>

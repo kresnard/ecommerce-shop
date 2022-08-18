@@ -1,20 +1,26 @@
 import './App.css';
-import HomePage from 'component/homepage'
-import DetailProduct from './component/detailProduct/detailProduct'
-import Cart from './component/cart/cart';
-import Login from './component/login/login';
-import Register from './component/register/register';
+import Header from "./component/header"
+import HomePage from './pages/homepage';
+import DetailProduct from 'pages/detailProduct';
+import Cart from 'pages/cart';
+import Login from './pages/login';
+import Register from './pages/register';
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 
 function App() {
   return (
-    <>
-      <HomePage />
-      <DetailProduct />
-      <Cart />
-      <Login />
-      <Register />    
-    </>
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route exact path="/" element={<HomePage />} />
+        <Route exact path="/DetailProduct" element={<DetailProduct />} />
+        <Route exact path="/Cart" element={<Cart />} />
+        <Route exact path="/sign-in" element={<Login />} />
+        <Route exact path="/sign-up" element={<Register />} />
+      </Routes>
+          
+    </BrowserRouter>
   );
 }
 

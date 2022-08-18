@@ -3,7 +3,7 @@ import { images } from "assets";
 
 const Category = () => {
     return (
-        <div className="container">
+        <React.Fragment>
             <div className="categories">
                 <h2>Categories</h2>
 
@@ -54,7 +54,7 @@ const Category = () => {
                 </div>
 
             </div>
-        </div>
+        </React.Fragment>
     )
 };
 

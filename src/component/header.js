@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom";
 import { images } from "assets";
 
 const Header = () => {
@@ -14,17 +15,12 @@ const Header = () => {
                 
                 <nav>
                     <ul>
-                        <li><a className="home" href="login.html">Home</a></li>
-                        <li><a className="" href="#products">Products</a></li>
-                        <li><a className="" href="login.html">Sign In</a></li>
-                        <li><a className="" href="login.html">Sign Up</a></li>
+                        <li className="home"><Link to ="/">Home</Link></li>
+                        <li><Link to="/Cart">Cart</Link></li>
+                        <li><Link to="/sign-in">Sign In</Link></li>
+                        <li><Link to="/sign-up">Sign Up</Link></li>
                     </ul>
                 </nav>
-            </div>
-
-        
-            <div className="hero-img">
-                <img className="banner" src={images["banner.jpg"]} alt=""/>
             </div>
 
         </div>
