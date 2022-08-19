@@ -2,9 +2,15 @@ import React from "react"
 import { auth, logout } from '../config/firebase'
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useLocation } from "react-router-dom";
+import { 
+    Container,
+    StyledHeader,
+    Logo,
+    Nav,
+    Li,
+    A } from "./header-style";
 
 import { Link as Scroll } from "react-scroll";
-import { Link } from "react-router-dom";
 import { images } from "assets";
 
 const Header = () => {
@@ -12,42 +18,40 @@ const Header = () => {
     const [user] = useAuthState(auth);
 
     return (
-        <div className="container">
+        <Container>
 
-            <div className="header">
-                <div className="logo">
-                    <img src={images["logo.png"]} alt="logo-Eshop"/>
-                </div>
+            <StyledHeader>
+                <Logo src={images["logo.png"]} alt="logo-Eshop" />
                 
-                <nav>
+                <Nav>
                     <ul>
-                        <li className="home"><Link to ="/">Home</Link></li>
+                        <Li className="home"><A to ="/">Home</A></Li>
                         { location.pathname !== '/' ? 
-                        <li>
-                            <Link to="/" >Product</Link>
-                        </li>                        
+                        <Li>
+                            <A to="/" >Product</A>
+                        </Li>                        
                         :
-                        <li>
-                            <Scroll to="products" spy={true} smooth={true} offset={250} duration={500}>Product</Scroll>
-                        </li>  
+                        <Li>
+                            <Scroll to="products" style={{cursor:"pointer"}} spy={true} smooth={true} offset={250} duration={500}><A>Product</A></Scroll>
+                        </Li>  
                         }
                         {
-                            user ?  <li><Link to="/Cart">Cart</Link></li> : ''
+                            user ?  <Li><A to="/Cart">Cart</A></Li> : ''
                         }                       
                         {
-                            user ? '' : <li><Link to="/sign-in">Sign In</Link></li>
+                            user ? '' : <Li><A to="/sign-in">Sign In</A></Li>
                         }
                         {
-                            user ? ( <li><Link to="" ><span onClick={logout}>Log Out</span></Link></li> ) : '' 
+                            user ? ( <Li><A to="" ><span onClick={logout}>Log Out</span></A></Li> ) : '' 
                         }
                         {
-                            user ? '' : <li><Link to="/sign-up">Sign Up</Link></li>
+                            user ? '' : <Li><A to="/sign-up">Sign Up</A></Li>
                         }                      
                     </ul>
-                </nav>
-            </div>
+                </Nav>
+            </StyledHeader>
 
-        </div>
+        </Container>
 
     )
 };
