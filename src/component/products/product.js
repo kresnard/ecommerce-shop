@@ -1,100 +1,110 @@
 import React from "react"
-import { images } from "assets";
+import { 
+    Products,
+    H2,
+    GroupBoxCard,
+    BoxCard,
+    A,
+    CardProducts,
+    StyledImg,
+    H6,
+    StyledP } from "./products-style";
 
-import { Link } from "react-router-dom";
+import { images } from "assets";
+// import { Link } from "react-router-dom";
 
 const Product = () => {
     return (
         <React.Fragment>
             
 
-            <div id="products" className="products">
-                <h2>Products</h2>
+            <Products id="products">
+                <H2>Products</H2>
 
-                <div className="group-box-card">
+                <GroupBoxCard>
 
-                    <div className="box-card">
-                        <Link to="/DetailProduct">
-                            <div className="card-products">
-                                <img src={images["prd-green-sofa.png"]} alt="" />
-                            </div>
-                            <h6>Green Sofa</h6>
-                            <p>$400</p>
-                        </Link>
-                    </div>
+                    <BoxCard>
+                        <A href="/DetailProduct">
+                            <CardProducts>
+                                <StyledImg src={images["prd-green-sofa.png"]} alt="" />
+                            </CardProducts>
+                            <H6>Green Sofa</H6>
+                            <StyledP>$400</StyledP>
+                        </A>
+                    </BoxCard>
 
-                    <div className="box-card">
-                        <a href="detail-product.html">
-                            <div className="card-products">
-                                <img src={images["prd-orange-bogotta.png"]} alt="" />
-                            </div>
-                            <h6>Orange Bogotta</h6>
-                            <p>$400</p>
-                        </a>
-                    </div>
+                    <BoxCard>
+                        <A href="/DetailProduct">
+                            <CardProducts>
+                                <StyledImg src={images["prd-orange-bogotta.png"]} alt="" />
+                            </CardProducts>
+                            <H6>Orange Bogotta</H6>
+                            <StyledP>$400</StyledP>
+                        </A>
+                    </BoxCard>
 
-                    <div className="box-card">
-                        <a href="detail-product.html">
-                            <div className="card-products">
-                                <img src={images["prd-apple-watch.png"]} alt="" />
-                            </div>
-                            <h6>Apple Watch</h6>
-                            <p>$400</p>
-                        </a>
-                    </div>
+                    <BoxCard>
+                        <A href="/DetailProduct">
+                            <CardProducts>
+                                <StyledImg src={images["prd-apple-watch.png"]} alt="" />
+                            </CardProducts>
+                            <H6>Apple Watch</H6>
+                            <StyledP>$400</StyledP>
+                        </A>
+                    </BoxCard>
 
-                    <div className="box-card">
-                        <a href="detail-product.html">
-                            <div className="card-products">
-                                <img src={images["prd-maketti-powder.png"]}   alt="" />
-                            </div>
-                            <h6>Maketti Powder</h6>
-                            <p>$400</p>
-                        </a>
-                    </div>
+                    <BoxCard>
+                        <A href="/DetailProduct">
+                            <CardProducts>
+                                <StyledImg src={images["prd-maketti-powder.png"]}   alt="" />
+                            </CardProducts>
+                            <H6>Maketti Powder</H6>
+                            <StyledP>$400</StyledP>
+                        </A>
+                    </BoxCard>
 
-                    <div className="box-card">
-                        <a href="detail-product.html">
-                            <div className="card-products">
-                                <img src={images["prd-glass-plate.png"]}  alt="" />
-                            </div>
-                            <h6>Glass Plate</h6>
-                            <p>$400</p>
-                        </a>
-                    </div>
+                    <BoxCard>
+                        <A href="/DetailProduct">
+                            <CardProducts>
+                                <StyledImg src={images["prd-glass-plate.png"]}  alt="" />
+                            </CardProducts>
+                            <H6>Glass Plate</H6>
+                            <StyledP>$400</StyledP>
+                        </A>
+                    </BoxCard>
 
-                    <div className="box-card">
-                        <a href="detail-product.html">
-                            <div className="card-products">
-                                <img src={images["prd-drone.png"]} alt="" />
-                            </div>
-                            <h6>Mavick Drone</h6>
-                            <p>$400</p>
-                        </a>
-                    </div>
+                    <BoxCard>
+                        <A href="/DetailProduct">
+                            <CardProducts>
+                                <StyledImg src={images["prd-drone.png"]} alt="" />
+                            </CardProducts>
+                            <H6>Mavick Drone</H6>
+                            <StyledP>$400</StyledP>
+                        </A>
+                    </BoxCard>
 
-                    <div className="box-card">
-                        <a href="detail-product.html">
-                            <div className="card-products">
-                                <img src={images["prd-nike.png"]} alt="" />
-                            </div>
-                            <h6>Nike Black</h6>
-                            <p>$400</p>
-                        </a>
-                    </div>
+                    <BoxCard>
+                        <A href="/DetailProduct">
+                            <CardProducts>
+                                <StyledImg src={images["prd-nike.png"]} alt="" />
+                            </CardProducts>
+                            <H6>Nike Black</H6>
+                            <StyledP>$400</StyledP>
+                        </A>
+                    </BoxCard>
 
-                    <div className="box-card">
-                        <a href="detail-product.html">
-                            <div className="card-products">
-                                <img src={images["prd-monkey.png"]} alt="" />
-                            </div>
-                            <h6>Monkey Toys</h6>
-                            <p>$400</p>
-                        </a>
-                    </div>
+                    <BoxCard>
+                        <A href="/DetailProduct">
+                            <CardProducts>
+                                <StyledImg src={images["prd-monkey.png"]} alt="" />
+                            </CardProducts>
+                            <H6>Monkey Toys</H6>
+                            <StyledP>$400</StyledP>
+                        </A>
+                    </BoxCard>
 
-                </div>
-            </div>
+                </GroupBoxCard>
+            </Products>
 
             
         </React.Fragment>

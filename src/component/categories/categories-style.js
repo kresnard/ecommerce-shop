@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledCategories = styled.div`
-    width: 95%;
+    width: 100%;
     margin: auto
 
     @media (max-width : 768px) {
@@ -34,13 +34,14 @@ export const BoxCard = styled.div`
     background-color: F4F4F4;
     width: 134px;
     height: 155px;
-    margin: auto;
-    margin: 20px 0;
+    // margin: auto;
+    // margin: 30px 0;
     border-radius: 10px;
 
     @media (max-width : 575px) {
     width: 100.5px;
     height: 116,25px;
+    margin: 25px 0;
     }
 `
 
