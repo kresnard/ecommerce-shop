@@ -33,7 +33,7 @@ export const Nav = styled.nav`
 
 export const Li = styled.li`
     display: inline-block;
-    margin-right: 10px;
+    margin-left: 10px;
 `
 
 export const A = styled.a`
