@@ -1,8 +1,8 @@
 import React from 'react'
 
-import Hero from '../component/hero'
-import Category from 'component/categories';
-import Product from 'component/product';
+import Hero from '../component/hero/index'
+import Category from 'component/categories/categories';
+import Product from 'component/products/product';
 
 
 

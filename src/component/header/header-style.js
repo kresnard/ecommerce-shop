@@ -20,6 +20,10 @@ export const StyledHeader = styled.div`
 
 export const Logo = styled.img`
     height: 20px;
+
+    @media (max-width : 768px) {
+        height: 16px;
+    }
 `
 
 export const Nav = styled.nav`

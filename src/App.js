@@ -1,5 +1,5 @@
 import './App.css';
-import Header from "./component/header"
+import Header from "./component/header/index";
 import HomePage from './pages/homepage';
 import DetailProduct from 'pages/detailProduct';
 import Cart from 'pages/cart';

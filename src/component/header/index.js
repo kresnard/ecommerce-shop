@@ -1,5 +1,5 @@
 import React from "react"
-import { auth, logout } from '../config/firebase'
+import { auth, logout } from '../../config/firebase'
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useLocation } from "react-router-dom";
 import { 
@@ -8,12 +8,12 @@ import {
     Logo,
     Nav,
     Li,
-    A } from "./header-style";
+    A } from "../../component/header/header-style";
 
 import { Link as Scroll } from "react-scroll";
 import { images } from "assets";
 
-const Header = () => {
+const Index = () => {
     const location = useLocation();
     const [user] = useAuthState(auth);
 
@@ -56,4 +56,4 @@ const Header = () => {
     )
 };
 
-export default Header;
+export default Index;
