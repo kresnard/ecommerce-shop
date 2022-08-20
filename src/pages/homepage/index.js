@@ -1,7 +1,8 @@
-import React from 'react'
+import React from 'react'; 
+import { Container } from './homepage-style';
 
-import Hero from '../component/hero/index'
-import Category from 'component/categories/index'
+import Hero from '../../component/hero/index';
+import Category from 'component/categories/index';
 import Product from 'component/products/index';
 
 
@@ -9,11 +10,11 @@ import Product from 'component/products/index';
 const Home = () => {
     return (
         <React.Fragment>
-            <div className="container">
+            <Container>
                 <Hero />
                 <Category />
                 <Product />
-            </div>
+            </Container>
         </React.Fragment>
         
     )
