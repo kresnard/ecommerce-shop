@@ -3,6 +3,15 @@ import { auth, logInWithEmailAndPassword } from "config/firebase";
 import { useAuthState } from 'react-firebase-hooks/auth'
 import { useNavigate } from "react-router-dom";
 
+import { 
+    Container,
+    StyledLogin,
+    H1,
+    Form,
+    P,
+    Input, 
+    Button } from "./login-style";
+
 const Login = () => {
     const [user, loading, error] = useAuthState(auth);
 
@@ -29,13 +38,13 @@ const Login = () => {
     }, [loading, user,error,navigate]);
 
     return (
-        <div className="container">
+        <Container>
             
-            <div className="login">
-                <h1>Sign In</h1>
-                <form action="" method="">
-                    <p>Email</p>
-                    <input
+            <StyledLogin>
+                <H1>Sign In</H1>
+                <Form action="" method="">
+                    <P>Email</P>
+                    <Input
                     type="text"
                     name="email"
                     placeholder="Input your email"
@@ -47,7 +56,7 @@ const Login = () => {
                         })
                     )}
                     /><br/>
-                    <p>Password</p>
+                    <P>Password</P>
                     <input
                     type="password"
                     name="pass"
@@ -60,12 +69,12 @@ const Login = () => {
                         })
                     )}
                     /><br/>
-                    <button onClick={(e) => handleLogin(e,"login")}>Sign In</button>
-                </form>
+                    <Button onClick={(e) => handleLogin(e,"login")}>Sign In</Button>
+                </Form>
                 
-            </div>
+            </StyledLogin>
 
-        </div>
+        </Container>
     )  
 };
 

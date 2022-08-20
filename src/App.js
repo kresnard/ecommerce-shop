@@ -3,8 +3,8 @@ import Header from "./component/header";
 import HomePage from './pages/homepage';
 import DetailProduct from 'pages/detail-products/index.js';
 import Cart from 'pages/cart';
-import Login from './pages/login/login';
-import Register from './pages/register/register';
+import Login from './pages/login';
+import Register from './pages/register';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 

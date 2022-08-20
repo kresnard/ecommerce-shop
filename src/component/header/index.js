@@ -25,10 +25,10 @@ const Index = () => {
                 
                 <Nav>
                     <ul>
-                        <Li className="home"><A to ="/">Home</A></Li>
+                        <Li className="home"><A  href="/">Home</A></Li>
                         { location.pathname !== '/' ? 
                         <Li>
-                            <A to="/" >Product</A>
+                            <A href="/" >Product</A>
                         </Li>                        
                         :
                         <Li>
@@ -36,16 +36,16 @@ const Index = () => {
                         </Li>  
                         }
                         {
-                            user ?  <Li><A to="/Cart">Cart</A></Li> : ''
+                            user ?  <Li><A href="/Cart">Cart</A></Li> : ''
                         }                       
                         {
-                            user ? '' : <Li><A to="/sign-in">Sign In</A></Li>
+                            user ? '' : <Li><A href="/sign-in">Sign In</A></Li>
                         }
                         {
-                            user ? ( <Li><A to="" ><span onClick={logout}>Log Out</span></A></Li> ) : '' 
+                            user ? ( <Li><A href="" ><span onClick={logout}>Log Out</span></A></Li> ) : '' 
                         }
                         {
-                            user ? '' : <Li><A to="/sign-up">Sign Up</A></Li>
+                            user ? '' : <Li><A href="/sign-up">Sign Up</A></Li>
                         }                      
                     </ul>
                 </Nav>
