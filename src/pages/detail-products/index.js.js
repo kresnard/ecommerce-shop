@@ -14,8 +14,12 @@ import {
     A } from "./detailProduct-style";
 
 import { images } from "assets";
+import { auth } from '../../config/firebase'
+import { useAuthState } from 'react-firebase-hooks/auth';
 
 const DetailProduct = () => {
+    const [user] = useAuthState(auth);
+
     return (
         <Container>
 
@@ -37,7 +41,7 @@ const DetailProduct = () => {
                                 In reality, the majority of sofas sold are actually made of petroleum-based materials.
                                 That's because sofas are made of rigid plastic foam.
                                 Foam is not an environmentally friendly material, but it's cheap.</PExp>
-                            <A href="/Cart" >Add to Cart</A>
+                            <A href={user ? "/Cart" : "/sign-in"} >Add to Cart</A>
                         </Col2>
 
                     </ColDetailProduct>
