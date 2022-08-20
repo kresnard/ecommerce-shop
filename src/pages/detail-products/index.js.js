@@ -10,9 +10,9 @@ import {
     H1,
     PQuote,
     H4,
-    PExp } from "./detailProduct-style";
+    PExp,
+    A } from "./detailProduct-style";
 
-import { Link } from "react-router-dom";
 import { images } from "assets";
 
 const DetailProduct = () => {
@@ -37,7 +37,7 @@ const DetailProduct = () => {
                                 In reality, the majority of sofas sold are actually made of petroleum-based materials.
                                 That's because sofas are made of rigid plastic foam.
                                 Foam is not an environmentally friendly material, but it's cheap.</PExp>
-                            <Link to="/Cart" className="add-to-cart" href="cart-product.html">Add to Cart</Link>
+                            <A href="/Cart" >Add to Cart</A>
                         </Col2>
 
                     </ColDetailProduct>

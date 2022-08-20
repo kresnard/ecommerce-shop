@@ -97,3 +97,22 @@ export const PExp = styled.p`
         font-size: 0.75rem;
     }
 `
+
+export const A = styled.a`
+    margin-top: 16px;
+    text-decoration: none;
+    position: absolute;
+    width: 210px;
+    height: 35px;
+    background-color: #29A867;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 6px;
+    border-radius: 16px;
+
+    :hover {
+    border: 1px solid #29A867;
+    background-color: #ffffff;
+    color: #29A867;
+    }
+`

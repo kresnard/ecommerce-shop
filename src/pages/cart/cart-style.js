@@ -125,3 +125,16 @@ export const Ptotal = styled.p`
     line-height: 27x;
     color: #29A867;
 `
+
+export const A = styled.a`
+    margin: 16px auto;
+    text-decoration: none;
+    width: 35.75%;
+    height: 35px;
+    background-color: #29A867;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 6px;
+    border-radius: 6px;
+    display: block;
+`

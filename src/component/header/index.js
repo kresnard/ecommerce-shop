@@ -32,7 +32,7 @@ const Index = () => {
                         </Li>                        
                         :
                         <Li>
-                            <Scroll to="products" style={{cursor:"pointer"}} spy={true} smooth={true} offset={250} duration={500}><A>Product</A></Scroll>
+                            <Scroll to="products" style={{cursor:"pointer"}} spy={true} smooth={true} offset={0} duration={500}><A>Product</A></Scroll>
                         </Li>  
                         }
                         {

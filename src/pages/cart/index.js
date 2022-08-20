@@ -14,7 +14,8 @@ import {
     CardDpm,
     H2,
     Pdpm,
-    Ptotal } from "./cart-style"; 
+    Ptotal,
+    A } from "./cart-style"; 
 
 import { images } from "assets";
 
@@ -107,7 +108,7 @@ const Cart = () => {
                         <H2>Total</H2>
                     </CardDpm>
 
-                    <a href=" ">Checkout</a>
+                    <A href="/Cart">Checkout</A>
 
 
                 </DataPayment>
