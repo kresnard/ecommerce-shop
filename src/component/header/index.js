@@ -27,10 +27,10 @@ const Index = () => {
                 <Nav>
                     <ul>
                         <Li className="home"><Link className="navbar" to="/">Home</Link></Li>
-                        { location?.pathname !== '/' ? 
-                        <Li>
-                            <Link className="navbar" to="/" >Product</Link>
-                        </Li>                        
+                        { location?.pathname !== '/' ? ""
+                        // <Li>
+                        //     <Link className="navbar" to="/" >Product</Link>
+                        // </Li>                        
                         :
                         <Li>
                             <Scroll className="navbar" to="products" style={{cursor:"pointer"}} spy={true} smooth={true} offset={0} duration={500}>Product</Scroll>

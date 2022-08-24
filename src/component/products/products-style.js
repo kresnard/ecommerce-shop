@@ -26,18 +26,25 @@ export const GroupBoxCard = styled.div`
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: -20px;
+    
 `
 
 export const BoxCard = styled.div`
     width: 216px;
-    height: 155px;
+    // height: 155px;
     margin: auto;
     margin: 20px 0 40px 0;
     border-radius: 10px;
 
+    :hover{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+
+    
+
     @media (max-width : 575px) {
     width: 150px;
-    height: 150px;
+    // height: 150px;
     margin-bottom: 5px;
     `
 

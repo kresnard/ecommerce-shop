@@ -18,11 +18,15 @@ import { Link } from "react-router-dom";
 const Product = () => {
 
     // const [products, setProducts] = useState([]);
-    const {data}  = useProducts()
+    const { isLoading, data}  = useProducts()
     console.log('data', data)
     
 
-    return (
+    return isLoading ? (
+        <div style={{width:"40%", marginLeft:"400px"}}>
+            <img src={images["loading-slow-net.gif"]} alt=""/>
+        </div>
+    ) : (
         <React.Fragment>
             
 
@@ -31,7 +35,7 @@ const Product = () => {
 
                 <GroupBoxCard>
 
-
+                
                 {data.map((product,index) => 
                 (<BoxCard key={index}>
                         <Link className="card-prd" to={`/DetailProduct/${product.id}`}>

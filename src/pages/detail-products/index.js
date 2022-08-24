@@ -21,7 +21,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 const DetailProduct = () => {
     const [user] = useAuthState(auth);
 
-    const [, data, getProductDetail ] = useDetailProduct()
+    const [isLoading, data, getProductDetail ] = useDetailProduct()
     // console.log('data', data)
 
     const {id} = useParams()
@@ -32,7 +32,13 @@ const DetailProduct = () => {
         // console.log('data', data)
     },[]);
 
-    return (
+    return isLoading ? 
+        ( <Container>
+            <div style={{width:"40%", marginLeft:"400px", marginTop:"150px"}}>
+            <img src={images["loading-slow-net.gif"]} alt=""/>
+        </div>
+        </Container>
+        ): (
         <Container>
                 <StyledDetailProduct>
                 
