@@ -13,7 +13,7 @@ export const CartProduct = styled.div`
     margin-top: 40px;
 `
 export const H1 = styled.h1`
-    font-size: 18px;
+    font-size: 1.25rem;
     font-weight: 700;
     line-height: 24x;
     color: #0C0D36;

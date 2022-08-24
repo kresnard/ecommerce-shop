@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
 
+export const IsLoading = styled.div`
+    width:50%;
+    display: block;
+    margin-left: 25%;   
+`
+
 export const Products = styled.div`
     width: 100%;
     margin: auto;

@@ -8,7 +8,8 @@ import {
     CardProducts,
     StyledImg,
     H6,
-    StyledP } from "./products-style";
+    StyledP, 
+    IsLoading} from "./products-style";
 
 import '../../App.css'
 import { images } from "assets";
@@ -23,10 +24,12 @@ const Product = () => {
     
 
     return isLoading ? (
-        <div style={{width:"40%", marginLeft:"400px"}}>
+        <IsLoading>
             <img src={images["loading-slow-net.gif"]} alt=""/>
-        </div>
-    ) : (
+        </IsLoading>
+    )
+    : 
+    (
         <React.Fragment>
             
 

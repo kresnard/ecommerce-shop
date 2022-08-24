@@ -11,7 +11,8 @@ import {
     H1,
     PQuote,
     H4,
-    PExp } from "./detailProduct-style";
+    PExp,
+    IsLoading } from "./detailProduct-style";
 
 import { Link, useParams } from "react-router-dom";
 import { images } from "assets";
@@ -32,13 +33,15 @@ const DetailProduct = () => {
         // console.log('data', data)
     },[]);
 
-    return isLoading ? 
-        ( <Container>
-            <div style={{width:"40%", marginLeft:"400px", marginTop:"150px"}}>
-            <img src={images["loading-slow-net.gif"]} alt=""/>
-        </div>
+    return isLoading ? ( 
+        <Container>
+            <IsLoading>
+                <img src={images["loading-slow-net.gif"]} alt=""/>
+            </IsLoading>
         </Container>
-        ): (
+        ) 
+        : 
+        (
         <Container>
                 <StyledDetailProduct>
                 

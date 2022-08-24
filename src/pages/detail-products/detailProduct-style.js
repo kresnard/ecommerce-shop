@@ -4,10 +4,17 @@ export const Container = styled.div`
     width: 69.69%;
     margin: auto;
     background-color: #ffffff;
+    margin-top: 60px;
 
     @media (max-width : 768px) {
         width: 90%;
     }
+`
+
+export const IsLoading = styled.div`
+    width:50%;
+    display: block;
+    margin-left: 25%;   
 `
 
 export const StyledDetailProduct = styled.div`
