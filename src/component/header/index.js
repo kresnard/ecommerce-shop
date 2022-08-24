@@ -9,15 +9,22 @@ import {
     Nav,
     Li} from "../../component/header/header-style";
 
-import { Link as Scroll } from "react-scroll";
-import { Link } from "react-router-dom";
+import { animateScroll, Link as Scroll } from "react-scroll";
+import { Link, useNavigate } from "react-router-dom";
 import { images } from "assets";
 import '../../App.css'
 
 const Index = () => {
     const location = useLocation();
     const [user] = useAuthState(auth);
+    const navigate = useNavigate();
 
+    const scrollToProducts = () => {
+        if ( location.pathname !== '/' ) {
+            navigate("/");
+            animateScroll.scrollTo(1000);
+        }
+    }
     return (
         <Container>
 
@@ -26,16 +33,10 @@ const Index = () => {
                 
                 <Nav>
                     <ul>
-                        <Li className="home"><Link className="navbar" to="/">Home</Link></Li>
-                        { location?.pathname !== '/' ? ""
-                        // <Li>
-                        //     <Link className="navbar" to="/" >Product</Link>
-                        // </Li>                        
-                        :
+                        <Li className="home"><Link className="navbar" to="/">Home</Link></Li>                        
                         <Li>
-                            <Scroll className="navbar" to="products" style={{cursor:"pointer"}} spy={true} smooth={true} offset={0} duration={500}>Product</Scroll>
-                        </Li>  
-                        }
+                            <Scroll className="navbar" to="products" style={{cursor:"pointer"}} spy={true} smooth={true} offset={0} duration={500} onClick={scrollToProducts}>Product</Scroll>
+                        </Li>                          
                         {
                             user ?  <Li><Link className="navbar" to="/Cart">Cart</Link></Li> : ''
                         }                       

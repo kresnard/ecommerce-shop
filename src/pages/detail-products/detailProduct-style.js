@@ -14,7 +14,12 @@ export const Container = styled.div`
 export const IsLoading = styled.div`
     width:50%;
     display: block;
-    margin-left: 25%;   
+    margin-left: 40%;
+    margin-top: 100px;
+
+    @media (max-width : 768px) {
+        margin-left: 25%;
+    }   
 `
 
 export const StyledDetailProduct = styled.div`
