@@ -16,6 +16,7 @@ export const IsLoading = styled.div`
     display: block;
     margin-left: 40%;
     margin-top: 100px;
+    margin-bottom: 100px;
 
     @media (max-width : 768px) {
         margin-left: 25%;

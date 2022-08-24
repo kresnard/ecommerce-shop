@@ -6,6 +6,7 @@ export const IsLoading = styled.div`
     display: block;
     margin-left: 40%;
     margin-top: 100px;
+    margin-bottom: 800px;
 
     @media (max-width : 768px) {
         margin-left: 25%;
@@ -37,15 +38,16 @@ export const GroupBoxCard = styled.div`
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: -20px;
-    
 `
 
 export const BoxCard = styled.div`
     width: 216px;
-    // height: 155px;
+    min-height: 200px;
     margin: auto;
     margin: 20px 0 40px 0;
     border-radius: 10px;
+    border:  0.1px solid rgba(0, 0, 0, .01);
+    box-shadow: rgba(99, 99, 99, 0.05) 0px 2px 8px 0px;
 
     :hover{
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -71,7 +73,7 @@ export const StyledImg = styled.img`
     width: 80%;
     align-items: center;
     margin: auto;
-    padding: 10px 10px 0 10px;
+    padding: 10px 5px 0 5px;
     color: rgb(148, 148, 148);
 
     @media screen and (max-width : 575px) {
