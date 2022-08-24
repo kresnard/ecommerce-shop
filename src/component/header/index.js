@@ -47,7 +47,7 @@ const Index = () => {
                             user ? ( <Li><Link className="navbar" to="" ><span onClick={logout}>Log Out</span></Link></Li> ) : '' 
                         }
                         {
-                            user ? '' : <Li><Link className="navbar" to="/sign-up">Sign Up</Link></Li>
+                            user ? '' : <Li><Link className="nav-signup" to="/sign-up">Sign Up</Link></Li>
                         }                      
                     </ul>
                 </Nav>

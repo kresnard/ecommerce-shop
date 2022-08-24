@@ -57,7 +57,7 @@ export const BoxCard = styled.div`
 
     @media (max-width : 575px) {
     width: 150px;
-    // height: 150px;
+    min-height: 150px;
     margin-bottom: 5px;
     `
 

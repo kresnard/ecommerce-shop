@@ -195,3 +195,13 @@ body {
     background-color: #ffffff;
     color: #29A867;
 }
+
+.nav-signup{
+    background-color: #29A867;
+    color: #ffffff;
+    border-radius: 6px;    
+    text-decoration: none;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
