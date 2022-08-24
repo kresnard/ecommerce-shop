@@ -14,9 +14,9 @@ import {
     CardDpm,
     H2,
     Pdpm,
-    Ptotal,
-    A } from "./cart-style"; 
+    Ptotal } from "./cart-style"; 
 
+import { Link } from "react-router-dom";
 import { images } from "assets";
 
 const Cart = () => {
@@ -108,7 +108,7 @@ const Cart = () => {
                         <H2>Total</H2>
                     </CardDpm>
 
-                    <A href="/Cart">Checkout</A>
+                    <Link className="checkout" to="">Checkout</Link>
 
 
                 </DataPayment>

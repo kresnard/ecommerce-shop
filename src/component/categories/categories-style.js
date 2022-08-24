@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const StyledCategories = styled.div`
     width: 100%;
-    margin: auto
+    margin: auto;
+    margin-bottom: 40px;
 
     @media (max-width : 768px) {
         width: 90%;

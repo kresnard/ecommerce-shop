@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const Products = styled.div`
     width: 100%;
     margin: auto;
-    margin-bottom: 40px;
+    margin-bottom:40px;
 `
 
 export const H2 = styled.h2`
@@ -13,6 +13,7 @@ export const H2 = styled.h2`
     padding: 20px;
     color: 0C0D36;
     padding: 20px;
+
 
     @media (max-width : 575px) {
         font-size: 1.2rem;
@@ -24,21 +25,21 @@ export const GroupBoxCard = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-top: -20px;
 `
 
 export const BoxCard = styled.div`
     width: 216px;
     height: 155px;
     margin: auto;
-    margin: 20px 0;
+    margin: 20px 0 40px 0;
     border-radius: 10px;
 
     @media (max-width : 575px) {
     width: 150px;
     height: 150px;
-    margin-bottom: 20px;
-    }
-`
+    margin-bottom: 5px;
+    `
 
 export const A = styled.a`
     text-decoration: none;

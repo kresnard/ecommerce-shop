@@ -7,11 +7,12 @@ import {
     StyledHeader,
     Logo,
     Nav,
-    Li,
-    A } from "../../component/header/header-style";
+    Li} from "../../component/header/header-style";
 
 import { Link as Scroll } from "react-scroll";
+import { Link } from "react-router-dom";
 import { images } from "assets";
+import '../../App.css'
 
 const Index = () => {
     const location = useLocation();
@@ -25,27 +26,27 @@ const Index = () => {
                 
                 <Nav>
                     <ul>
-                        <Li className="home"><A  href="/">Home</A></Li>
-                        { location.pathname !== '/' ? 
+                        <Li className="home"><Link className="navbar" to="/">Home</Link></Li>
+                        { location?.pathname !== '/' ? 
                         <Li>
-                            <A href="/" >Product</A>
+                            <Link className="navbar" to="/" >Product</Link>
                         </Li>                        
                         :
                         <Li>
-                            <Scroll to="products" style={{cursor:"pointer"}} spy={true} smooth={true} offset={0} duration={500}><A>Product</A></Scroll>
+                            <Scroll className="navbar" to="products" style={{cursor:"pointer"}} spy={true} smooth={true} offset={0} duration={500}>Product</Scroll>
                         </Li>  
                         }
                         {
-                            user ?  <Li><A href="/Cart">Cart</A></Li> : ''
+                            user ?  <Li><Link className="navbar" to="/Cart">Cart</Link></Li> : ''
                         }                       
                         {
-                            user ? '' : <Li><A href="/sign-in">Sign In</A></Li>
+                            user ? '' : <Li><Link className="navbar" to="/sign-in">Sign In</Link></Li>
                         }
                         {
-                            user ? ( <Li><A href="" ><span onClick={logout}>Log Out</span></A></Li> ) : '' 
+                            user ? ( <Li><Link className="navbar" to="" ><span onClick={logout}>Log Out</span></Link></Li> ) : '' 
                         }
                         {
-                            user ? '' : <Li><A href="/sign-up">Sign Up</A></Li>
+                            user ? '' : <Li><Link className="navbar" to="/sign-up">Sign Up</Link></Li>
                         }                      
                     </ul>
                 </Nav>

@@ -70,10 +70,14 @@ export const StyledImg = styled.img`
 export const Input = styled.input`
     padding-left: 10px;
     margin: 10px auto;
-    width: 25%;
+    width: 30%;
     min-height: 36px;
     border: 1px solid #29A867;
     border-radius: 6px;
+
+    @media (max-width : 768px) {
+    margin-top: -8px;
+    }
 
     @media (max-width : 575px) {
     width: 40%;
