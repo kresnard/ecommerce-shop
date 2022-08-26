@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { auth, registerWithEmailAndPassword } from "../../config/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
-import swal from "sweetalert";
 
 import {
   Container,
@@ -33,7 +32,6 @@ const Register = () => {
         register.email,
         register.password
       );
-      swal("Congratulations!", "Registration success!", "success");
     }
   };
 

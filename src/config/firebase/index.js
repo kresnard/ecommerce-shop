@@ -30,15 +30,17 @@ const db = getFirestore(app);
 const logInWithEmailAndPassword = async (email, password) => {
   try {
     await signInWithEmailAndPassword(auth, email, password);
+    swal("Success!", "Sign In success!", "success");
   } catch (err) {
     console.error(err);
-    alert(err.message);
+    swal("Sign In Failed!", "All field should be filled!", "error");
   }
 };
 
 const registerWithEmailAndPassword = async (name, email, password) => {
   try {
     const res = await createUserWithEmailAndPassword(auth, email, password);
+    swal("Congratulations!", "Registration success!", "success");
     const user = res.user;
     await addDoc(collection(db, "users"), {
       uid: user.uid,
@@ -48,7 +50,7 @@ const registerWithEmailAndPassword = async (name, email, password) => {
     });
   } catch (err) {
     console.error(err);
-    alert(err.message);
+    swal("Sign Up Failed!", "All field should be filled!", "error");
   }
 };
 

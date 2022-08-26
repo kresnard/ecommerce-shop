@@ -12,7 +12,6 @@ import {
   Input,
   Button,
 } from "./login-style";
-import swal from "sweetalert";
 
 const Login = () => {
   const [user, loading, error] = useAuthState(auth);
@@ -28,7 +27,6 @@ const Login = () => {
     e.preventDefault();
     if (param === "login") {
       await logInWithEmailAndPassword(login.email, login.password);
-      swal("Usccess!", "Sign In success!", "success");
     }
   };
 
